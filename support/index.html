@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Support | Lannang</title>
+<meta name="description" content="Learn Philippine Hokkien (Lannang-ue)" />
+<style>
+:root {
+  --paper: #faf4e6; --card: #ffffff; --ink: #20282b; --sub: #6e6c61;
+  --jade: #13876a; --jade-dark: #0a5c45; --gold: #e6a817; --hair: #e4e1d6;
+  --ph-bg: #fbf3e0; --ph-ink: #8a6d16;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #14181a; --card: #1c2225; --ink: #eef0ea; --sub: #a6a89e;
+    --jade: #34b98f; --jade-dark: #8fe6c8; --gold: #e6b845; --hair: #2b3236;
+    --ph-bg: #2a2410; --ph-ink: #e6c766;
+  }
+}
+:root[data-theme="light"] {
+  --paper: #faf4e6; --card: #ffffff; --ink: #20282b; --sub: #6e6c61;
+  --jade: #13876a; --jade-dark: #0a5c45; --gold: #e6a817; --hair: #e4e1d6;
+  --ph-bg: #fbf3e0; --ph-ink: #8a6d16;
+}
+:root[data-theme="dark"] {
+  --paper: #14181a; --card: #1c2225; --ink: #eef0ea; --sub: #a6a89e;
+  --jade: #34b98f; --jade-dark: #8fe6c8; --gold: #e6b845; --hair: #2b3236;
+  --ph-bg: #2a2410; --ph-ink: #e6c766;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--paper); color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.65; font-size: 17px;
+}
+.wrap { max-width: 720px; margin: 0 auto; padding: 0 22px 80px; }
+header { padding: 30px 0 18px; border-bottom: 1px solid var(--hair); margin-bottom: 8px; }
+.brand { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.brand b { font-size: 24px; letter-spacing: -0.02em; }
+.brand b .plus { color: var(--gold); }
+.brand span { color: var(--sub); font-size: 14px; }
+nav { display: flex; gap: 18px; margin-top: 14px; font-size: 15px; }
+nav a { color: var(--jade); text-decoration: none; }
+nav a[aria-current="page"] { color: var(--ink); font-weight: 600; }
+nav a:hover { text-decoration: underline; }
+main { margin-top: 26px; }
+h1 { font-size: 30px; line-height: 1.2; letter-spacing: -0.02em; text-wrap: balance; margin: 0 0 6px; }
+h2 { font-size: 20px; margin: 34px 0 8px; color: var(--jade-dark); }
+h3 { font-size: 17px; margin: 22px 0 6px; }
+p, li { color: var(--ink); }
+p { margin: 12px 0; }
+ul { padding-left: 22px; margin: 12px 0; }
+li { margin: 6px 0; }
+a { color: var(--jade); }
+strong { color: var(--ink); }
+.ph {
+  background: var(--ph-bg); color: var(--ph-ink); border-radius: 5px;
+  padding: 0 6px; font-size: 0.92em; font-weight: 600; white-space: nowrap;
+}
+.draft {
+  background: var(--ph-bg); color: var(--ph-ink); border: 1px solid var(--gold);
+  border-radius: 10px; padding: 10px 14px; margin: 18px 0 0; font-size: 14px; font-weight: 600;
+}
+.cards { display: grid; gap: 14px; margin-top: 26px; grid-template-columns: 1fr 1fr; }
+@media (max-width: 560px) { .cards { grid-template-columns: 1fr; } }
+.card {
+  background: var(--card); border: 1px solid var(--hair); border-radius: 14px;
+  padding: 18px 20px; text-decoration: none; color: var(--ink); display: block;
+}
+.card:hover { border-color: var(--jade); }
+.card b { display: block; font-size: 18px; margin-bottom: 4px; }
+.card span { color: var(--sub); font-size: 15px; }
+footer { margin-top: 46px; padding-top: 18px; border-top: 1px solid var(--hair); color: var(--sub); font-size: 14px; }
+footer a { color: var(--jade); }
+footer .foot-links { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 8px; }
+
+/* Marketing landing (home page only) */
+.hero { text-align: center; padding: 10px 0 4px; }
+.hero img.appicon {
+  width: 88px; height: 88px; border-radius: 21px; box-shadow: 0 8px 24px rgba(0,0,0,.14);
+  border: 1px solid var(--hair);
+}
+.hero h1 { margin: 16px 0 0; font-size: 34px; }
+.hero .lede { font-size: 19px; color: var(--sub); max-width: 32em; margin: 12px auto 0; }
+.cta { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin: 24px 0 4px; }
+.btn {
+  display: inline-flex; align-items: center; gap: 8px; text-decoration: none;
+  border-radius: 12px; padding: 12px 20px; font-size: 16px; font-weight: 600;
+  background: var(--jade); color: #fff; border: 1px solid var(--jade);
+}
+.btn:hover { background: var(--jade-dark); border-color: var(--jade-dark); }
+.btn.ghost { background: transparent; color: var(--jade); }
+.btn.ghost:hover { background: transparent; text-decoration: underline; }
+.badges { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin: 14px 0 2px; }
+.badge {
+  display: inline-flex; align-items: center; gap: 11px; text-decoration: none;
+  background: var(--ink); color: var(--paper); border-radius: 13px; padding: 10px 18px;
+  border: 1px solid var(--ink); line-height: 1.15; opacity: .5; cursor: default;
+}
+.badge .mark { font-size: 22px; }
+.badge small { display: block; font-size: 11px; letter-spacing: .04em; text-transform: uppercase; opacity: .85; }
+.badge b { font-size: 16px; }
+.note { text-align: center; color: var(--sub); font-size: 13px; margin-top: 10px; }
+.shots {
+  display: flex; gap: 16px; overflow-x: auto; padding: 10px 2px 16px; margin: 8px -4px 0;
+  scroll-snap-type: x mandatory; justify-content: flex-start;
+}
+@media (min-width: 660px) { .shots { justify-content: center; } }
+.shot { flex: 0 0 auto; width: 200px; scroll-snap-align: center; text-align: center; }
+.shot img {
+  width: 100%; height: auto; display: block; border-radius: 24px;
+  border: 1px solid var(--hair); background: var(--card); box-shadow: 0 14px 34px rgba(0,0,0,.13);
+}
+.shot span { display: block; color: var(--sub); font-size: 14px; margin-top: 12px; }
+.grid2 { display: grid; gap: 14px; grid-template-columns: 1fr 1fr; margin-top: 14px; }
+@media (max-width: 560px) { .grid2 { grid-template-columns: 1fr; } }
+.panel { background: var(--card); border: 1px solid var(--hair); border-radius: 14px; padding: 16px 20px; }
+.panel h3 { margin: 0 0 6px; color: var(--jade-dark); }
+.panel ul { margin: 8px 0 0; }
+.sep { border: 0; border-top: 1px solid var(--hair); margin: 40px 0 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="brand"><b>Lannang</b><span>Learn Philippine Hokkien (Lannang-ue)</span></div>
+  <nav><a href="../">Home</a><a href="../support/" aria-current="page">Support</a><a href="../privacy/">Privacy</a><a href="../terms/">Terms</a></nav>
+</header>
+
+<main>
+<h1>Support</h1>
+<p>Need help with Lannang? We are happy to hear from you.</p>
+<h2>Contact</h2>
+<p>For questions, feedback, or help with your account or subscription, email <a href="mailto:happykimi.dev@gmail.com">happykimi.dev@gmail.com</a> and we will get back to you. You can also report content problems and suggest corrections from inside the app, on any exercise.</p>
+<h2>Delete your account and data</h2>
+<p>You can delete your account and all associated data at any time from inside the app: open Profile, tap <strong>Delete account</strong>, and confirm. This permanently removes your account, your learning progress, and any voice recordings you submitted, and cannot be undone.</p>
+<p>If you cannot access the app, email <a href="mailto:happykimi.dev@gmail.com">happykimi.dev@gmail.com</a> from your account email address with the subject "Delete my account", and we will delete your account and data within 30 days.</p>
+<h2>What gets deleted</h2>
+<ul><li>Your account and sign-in identity</li><li>Your learning progress, streak, XP, and review history</li><li>Any voice recordings you submitted as feedback</li></ul>
+<p>Your subscription is billed by Apple or Google, so manage or cancel it in your Apple or Google account settings. Deleting the app does not cancel a subscription.</p>
+<h2>Legal</h2>
+<p>See our <a href="../privacy/">Privacy Policy</a> and <a href="../terms/">Terms of Service</a>.</p>
+</main>
+<footer>
+  <div class="foot-links">
+    <a href="../">Home</a>
+    <a href="../privacy/">Privacy</a>
+    <a href="../terms/">Terms</a>
+    <a href="mailto:happykimi.dev@gmail.com">Contact</a>
+  </div>
+  &copy; Lannang. Learn Philippine Hokkien (Lannang-ue).
+</footer>
+</div>
+</body>
+</html>
