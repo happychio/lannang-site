@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Privacy Policy | Lannang</title>
+<meta name="description" content="Learn Philippine Hokkien (Lannang-ue)" />
+<style>
+:root {
+  --paper: #faf4e6; --card: #ffffff; --ink: #20282b; --sub: #6e6c61;
+  --jade: #13876a; --jade-dark: #0a5c45; --gold: #e6a817; --hair: #e4e1d6;
+  --ph-bg: #fbf3e0; --ph-ink: #8a6d16;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #14181a; --card: #1c2225; --ink: #eef0ea; --sub: #a6a89e;
+    --jade: #34b98f; --jade-dark: #8fe6c8; --gold: #e6b845; --hair: #2b3236;
+    --ph-bg: #2a2410; --ph-ink: #e6c766;
+  }
+}
+:root[data-theme="light"] {
+  --paper: #faf4e6; --card: #ffffff; --ink: #20282b; --sub: #6e6c61;
+  --jade: #13876a; --jade-dark: #0a5c45; --gold: #e6a817; --hair: #e4e1d6;
+  --ph-bg: #fbf3e0; --ph-ink: #8a6d16;
+}
+:root[data-theme="dark"] {
+  --paper: #14181a; --card: #1c2225; --ink: #eef0ea; --sub: #a6a89e;
+  --jade: #34b98f; --jade-dark: #8fe6c8; --gold: #e6b845; --hair: #2b3236;
+  --ph-bg: #2a2410; --ph-ink: #e6c766;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--paper); color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.65; font-size: 17px;
+}
+.wrap { max-width: 720px; margin: 0 auto; padding: 0 22px 80px; }
+header { padding: 30px 0 18px; border-bottom: 1px solid var(--hair); margin-bottom: 8px; }
+.brand { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.brand b { font-size: 24px; letter-spacing: -0.02em; }
+.brand b .plus { color: var(--gold); }
+.brand span { color: var(--sub); font-size: 14px; }
+nav { display: flex; gap: 18px; margin-top: 14px; font-size: 15px; }
+nav a { color: var(--jade); text-decoration: none; }
+nav a[aria-current="page"] { color: var(--ink); font-weight: 600; }
+nav a:hover { text-decoration: underline; }
+main { margin-top: 26px; }
+h1 { font-size: 30px; line-height: 1.2; letter-spacing: -0.02em; text-wrap: balance; margin: 0 0 6px; }
+h2 { font-size: 20px; margin: 34px 0 8px; color: var(--jade-dark); }
+h3 { font-size: 17px; margin: 22px 0 6px; }
+p, li { color: var(--ink); }
+p { margin: 12px 0; }
+ul { padding-left: 22px; margin: 12px 0; }
+li { margin: 6px 0; }
+a { color: var(--jade); }
+strong { color: var(--ink); }
+.ph {
+  background: var(--ph-bg); color: var(--ph-ink); border-radius: 5px;
+  padding: 0 6px; font-size: 0.92em; font-weight: 600; white-space: nowrap;
+}
+.draft {
+  background: var(--ph-bg); color: var(--ph-ink); border: 1px solid var(--gold);
+  border-radius: 10px; padding: 10px 14px; margin: 18px 0 0; font-size: 14px; font-weight: 600;
+}
+.cards { display: grid; gap: 14px; margin-top: 26px; grid-template-columns: 1fr 1fr; }
+@media (max-width: 560px) { .cards { grid-template-columns: 1fr; } }
+.card {
+  background: var(--card); border: 1px solid var(--hair); border-radius: 14px;
+  padding: 18px 20px; text-decoration: none; color: var(--ink); display: block;
+}
+.card:hover { border-color: var(--jade); }
+.card b { display: block; font-size: 18px; margin-bottom: 4px; }
+.card span { color: var(--sub); font-size: 15px; }
+footer { margin-top: 46px; padding-top: 18px; border-top: 1px solid var(--hair); color: var(--sub); font-size: 14px; }
+footer a { color: var(--jade); }
+footer .foot-links { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 8px; }
+
+/* Marketing landing (home page only) */
+.hero { text-align: center; padding: 10px 0 4px; }
+.hero img.appicon {
+  width: 88px; height: 88px; border-radius: 21px; box-shadow: 0 8px 24px rgba(0,0,0,.14);
+  border: 1px solid var(--hair);
+}
+.hero h1 { margin: 16px 0 0; font-size: 34px; }
+.hero .lede { font-size: 19px; color: var(--sub); max-width: 32em; margin: 12px auto 0; }
+.cta { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin: 24px 0 4px; }
+.btn {
+  display: inline-flex; align-items: center; gap: 8px; text-decoration: none;
+  border-radius: 12px; padding: 12px 20px; font-size: 16px; font-weight: 600;
+  background: var(--jade); color: #fff; border: 1px solid var(--jade);
+}
+.btn:hover { background: var(--jade-dark); border-color: var(--jade-dark); }
+.btn.ghost { background: transparent; color: var(--jade); }
+.btn.ghost:hover { background: transparent; text-decoration: underline; }
+.badges { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin: 14px 0 2px; }
+.badge {
+  display: inline-flex; align-items: center; gap: 11px; text-decoration: none;
+  background: var(--ink); color: var(--paper); border-radius: 13px; padding: 10px 18px;
+  border: 1px solid var(--ink); line-height: 1.15; opacity: .5; cursor: default;
+}
+.badge .mark { font-size: 22px; }
+.badge small { display: block; font-size: 11px; letter-spacing: .04em; text-transform: uppercase; opacity: .85; }
+.badge b { font-size: 16px; }
+.note { text-align: center; color: var(--sub); font-size: 13px; margin-top: 10px; }
+.shots {
+  display: flex; gap: 16px; overflow-x: auto; padding: 10px 2px 16px; margin: 8px -4px 0;
+  scroll-snap-type: x mandatory; justify-content: flex-start;
+}
+@media (min-width: 660px) { .shots { justify-content: center; } }
+.shot { flex: 0 0 auto; width: 200px; scroll-snap-align: center; text-align: center; }
+.shot img {
+  width: 100%; height: auto; display: block; border-radius: 24px;
+  border: 1px solid var(--hair); background: var(--card); box-shadow: 0 14px 34px rgba(0,0,0,.13);
+}
+.shot span { display: block; color: var(--sub); font-size: 14px; margin-top: 12px; }
+.grid2 { display: grid; gap: 14px; grid-template-columns: 1fr 1fr; margin-top: 14px; }
+@media (max-width: 560px) { .grid2 { grid-template-columns: 1fr; } }
+.panel { background: var(--card); border: 1px solid var(--hair); border-radius: 14px; padding: 16px 20px; }
+.panel h3 { margin: 0 0 6px; color: var(--jade-dark); }
+.panel ul { margin: 8px 0 0; }
+.sep { border: 0; border-top: 1px solid var(--hair); margin: 40px 0 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="brand"><b>Lannang</b><span>Learn Philippine Hokkien (Lannang-ue)</span></div>
+  <nav><a href="../">Home</a><a href="../privacy/" aria-current="page">Privacy</a><a href="../terms/">Terms</a></nav>
+</header>
+
+<main>
+<h1>Privacy Policy for Lannang</h1>
+<p>Last updated: July 18, 2026</p>
+<p>Lannang ("we", "us", "the app") is operated by Justin Luis Uy ("the developer"). This policy explains what we collect, why, and your choices. Questions: happykimi.dev@gmail.com.</p>
+<h2>The short version</h2>
+<ul><li>We collect your email, your learning progress, and basic in-app activity, so the app can sign you in, save your progress, and manage your subscription.</li><li>If you choose to send feedback with a voice recording, we collect that recording and use it to correct and improve the app's Philippine Hokkien audio. Practice recordings you make but do not submit stay on your device and are never uploaded.</li><li>We do not track you across other apps or websites, we do not use advertising identifiers, we do not show ads, and we do not sell your data.</li><li>You can delete your account and all associated data from inside the app at any time.</li></ul>
+<h2>Information we collect</h2>
+<p><strong>Account information.</strong> When you sign in with Apple, Google, or an email one-time code, we receive and store your email address, and a display name if your provider supplies one. Sign in is handled by our authentication provider (Supabase).</p>
+<p><strong>Learning data.</strong> Your lesson progress, completed lessons, streak, XP, review items, and similar progress data, so your learning is saved and synced to your account.</p>
+<p><strong>App activity.</strong> Basic in-app events (for example, lessons started and completed) used to operate and improve the app. This is product analytics, not advertising, and is not used to track you.</p>
+<p><strong>Voice recordings you submit.</strong> When you attach a recording to a content report (for example, to show how a word should sound), we upload and store that audio clip along with the text you were reviewing and the reason you selected. We use these recordings to correct app content and to improve and train the app's Philippine Hokkien pronunciation. We do not use them to identify you, and we do not use voice for authentication. Recording is always optional and only happens when you tap the microphone and send. Practice recordings you make elsewhere in the app stay on your device and are never uploaded.</p>
+<p><strong>Subscription status.</strong> Whether you have an active "Plus" subscription and when it renews or expires. Purchases are processed by the Apple App Store or Google Play. We use RevenueCat to manage subscription state; RevenueCat receives your purchase information and an app-specific user identifier (your account id in our system).</p>
+<p>Apart from voice recordings you choose to submit as feedback (described above), we do not intentionally collect precise location, contacts, photos, health data, or biometric identifiers, and we do not use any recording to identify you.</p>
+<h2>How we use information</h2>
+<ul><li>To create and secure your account and sign you in.</li><li>To save and sync your learning progress across sessions and devices.</li><li>To provide, restore, and manage your subscription and entitlements.</li><li>To operate, maintain, debug, and improve the app.</li><li>To review the content problems you report, and to correct, improve, and train the app's Philippine Hokkien audio using the recordings you choose to submit.</li><li>To respond to your support requests.</li></ul>
+<h2>How information is shared</h2>
+<p>We share information only with service providers who process it on our behalf to run the app:</p>
+<ul><li><strong>Supabase</strong> (authentication, database, and hosting) stores your account and learning data.</li><li><strong>RevenueCat</strong> (subscription management) processes your subscription state.</li><li><strong>Apple App Store and Google Play</strong> process your payments under their own terms and privacy policies. We do not receive your full payment details.</li></ul>
+<p>We do not sell your personal information and we do not share it with third parties for their own advertising or marketing.</p>
+<p>We may disclose information if required by law, or to protect the rights, safety, and security of our users or the developer.</p>
+<h2>Data retention and deletion</h2>
+<p>We keep your account and learning data while your account is active. You can permanently delete your account and all associated data at any time from Profile, "Delete account", which removes your data from our systems. You can also email happykimi.dev@gmail.com to request deletion.</p>
+<h2>Your choices and rights</h2>
+<p>Depending on where you live, you may have rights to access, correct, delete, or export your personal information, and to object to or restrict certain processing. To exercise these, use in-app account deletion or contact happykimi.dev@gmail.com. You can manage or cancel your subscription in your Apple or Google account settings.</p>
+<h2>Children</h2>
+<p>Lannang is not directed to children under 13, and we do not knowingly collect personal information from children under 13. If you believe a child has provided us information, contact happykimi.dev@gmail.com and we will delete it. The app is rated for users 13 and older in the app stores.</p>
+<h2>International data transfers</h2>
+<p>Your information may be processed and stored in countries other than where you live, including where our service providers operate. We rely on appropriate safeguards for such transfers where required.</p>
+<h2>Security</h2>
+<p>We use reasonable technical and organizational measures to protect your information, including transport encryption and access controls (for example, row-level security on our database). No method of transmission or storage is completely secure.</p>
+<h2>Changes to this policy</h2>
+<p>We may update this policy. We will post the new version at this URL and update the "Last updated" date. Material changes may also be signaled in the app.</p>
+<h2>Contact</h2>
+<p>Justin Luis Uy happykimi.dev@gmail.com Republic of the Philippines (full mailing address available on request)</p>
+</main>
+<footer>
+  <div class="foot-links">
+    <a href="../">Home</a>
+    <a href="../privacy/">Privacy</a>
+    <a href="../terms/">Terms</a>
+    <a href="mailto:happykimi.dev@gmail.com">Contact</a>
+  </div>
+  &copy; Lannang. Learn Philippine Hokkien (Lannang-ue).
+</footer>
+</div>
+</body>
+</html>
