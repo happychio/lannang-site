@@ -5,54 +5,94 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Help build Lannang | Lannang</title>
 <meta name="description" content="Learn Philippine Hokkien (Lannang-ue)" />
+<meta property="og:title" content="Help build Lannang | Lannang" />
+<meta property="og:description" content="Learn Philippine Hokkien (Lannang-ue)" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://happychio.github.io/lannang-site/contribute/" />
+<meta property="og:image" content="https://happychio.github.io/lannang-site/media/icon.png" />
+<link rel="icon" href="../media/icon.png" />
+<link rel="apple-touch-icon" href="../media/icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
 <style>
 :root {
   --paper: #faf4e6; --card: #ffffff; --ink: #20282b; --sub: #6e6c61;
-  --jade: #13876a; --jade-dark: #0a5c45; --gold: #e6a817; --hair: #e4e1d6;
-  --ph-bg: #fbf3e0; --ph-ink: #8a6d16;
+  --jade: #13876a; --jade-deep: #0a5c45; --jade-edge: #0b5e47; --jade-soft: #e4f1ea;
+  --gold: #e6a817; --gold-ink: #33260a; --gold-edge: #c08a0e;
+  --hair: #e7e3d6; --tile-edge: #dad5c4;
+  --ph-bg: #fbf3e0; --ph-ink: #8a6d16; --shadow: rgba(32,40,43,.12);
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --paper: #14181a; --card: #1c2225; --ink: #eef0ea; --sub: #a6a89e;
-    --jade: #34b98f; --jade-dark: #8fe6c8; --gold: #e6b845; --hair: #2b3236;
-    --ph-bg: #2a2410; --ph-ink: #e6c766;
+    --paper: #131719; --card: #1c2225; --ink: #edefe9; --sub: #a8aa9f;
+    --jade: #2fb78c; --jade-deep: #7fddbd; --jade-edge: #0e5b46; --jade-soft: #1a3a2f;
+    --gold: #e6b845; --gold-ink: #33260a; --gold-edge: #a87f19;
+    --hair: #2b3236; --tile-edge: #394247;
+    --ph-bg: #2a2410; --ph-ink: #e6c766; --shadow: rgba(0,0,0,.45);
   }
 }
 :root[data-theme="light"] {
   --paper: #faf4e6; --card: #ffffff; --ink: #20282b; --sub: #6e6c61;
-  --jade: #13876a; --jade-dark: #0a5c45; --gold: #e6a817; --hair: #e4e1d6;
-  --ph-bg: #fbf3e0; --ph-ink: #8a6d16;
+  --jade: #13876a; --jade-deep: #0a5c45; --jade-edge: #0b5e47; --jade-soft: #e4f1ea;
+  --gold: #e6a817; --gold-ink: #33260a; --gold-edge: #c08a0e;
+  --hair: #e7e3d6; --tile-edge: #dad5c4;
+  --ph-bg: #fbf3e0; --ph-ink: #8a6d16; --shadow: rgba(32,40,43,.12);
 }
 :root[data-theme="dark"] {
-  --paper: #14181a; --card: #1c2225; --ink: #eef0ea; --sub: #a6a89e;
-  --jade: #34b98f; --jade-dark: #8fe6c8; --gold: #e6b845; --hair: #2b3236;
-  --ph-bg: #2a2410; --ph-ink: #e6c766;
+  --paper: #131719; --card: #1c2225; --ink: #edefe9; --sub: #a8aa9f;
+  --jade: #2fb78c; --jade-deep: #7fddbd; --jade-edge: #0e5b46; --jade-soft: #1a3a2f;
+  --gold: #e6b845; --gold-ink: #33260a; --gold-edge: #a87f19;
+  --hair: #2b3236; --tile-edge: #394247;
+  --ph-bg: #2a2410; --ph-ink: #e6c766; --shadow: rgba(0,0,0,.45);
 }
 * { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
 body {
   margin: 0; background: var(--paper); color: var(--ink);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  line-height: 1.65; font-size: 17px;
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.7; font-size: 17px;
+  -webkit-font-smoothing: antialiased;
 }
-.wrap { max-width: 720px; margin: 0 auto; padding: 0 22px 80px; }
-header { padding: 30px 0 18px; border-bottom: 1px solid var(--hair); margin-bottom: 8px; }
-.brand { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
-.brand b { font-size: 24px; letter-spacing: -0.02em; }
-.brand b .plus { color: var(--gold); }
-.brand span { color: var(--sub); font-size: 14px; }
-nav { display: flex; gap: 18px; margin-top: 14px; font-size: 15px; }
-nav a { color: var(--jade); text-decoration: none; }
-nav a[aria-current="page"] { color: var(--ink); font-weight: 600; }
-nav a:hover { text-decoration: underline; }
-main { margin-top: 26px; }
-h1 { font-size: 30px; line-height: 1.2; letter-spacing: -0.02em; text-wrap: balance; margin: 0 0 6px; }
-h2 { font-size: 20px; margin: 34px 0 8px; color: var(--jade-dark); }
-h3 { font-size: 17px; margin: 22px 0 6px; }
+h1, h2, h3, .btn, .brand b, .chip {
+  font-family: "Bricolage Grotesque", "Nunito", -apple-system, sans-serif;
+}
+a:focus-visible, .btn:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; border-radius: 6px; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } html { scroll-behavior: auto; } }
+
+/* Sticky top bar */
+.top {
+  position: sticky; top: 0; z-index: 10;
+  background: color-mix(in srgb, var(--paper) 88%, transparent);
+  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--hair);
+}
+.bar {
+  max-width: 860px; margin: 0 auto; padding: 12px 22px;
+  display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+}
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
+.brand img { width: 34px; height: 34px; border-radius: 9px; border: 1px solid var(--hair); }
+.brand b { font-size: 21px; font-weight: 800; letter-spacing: -0.02em; }
+nav { display: flex; gap: 4px; flex-wrap: wrap; margin-left: auto; font-size: 15px; }
+nav a {
+  color: var(--jade-deep); text-decoration: none; font-weight: 700;
+  padding: 5px 12px; border-radius: 999px;
+}
+nav a:hover { background: var(--jade-soft); }
+nav a[aria-current="page"] { background: var(--jade-soft); color: var(--jade-deep); }
+
+.wrap { max-width: 780px; margin: 0 auto; padding: 0 22px 70px; }
+main { margin-top: 30px; }
+h1 { font-size: 31px; line-height: 1.18; letter-spacing: -0.02em; text-wrap: balance; margin: 0 0 6px; font-weight: 800; }
+h2 { font-size: 23px; margin: 40px 0 10px; color: var(--jade-deep); font-weight: 700; letter-spacing: -0.01em; }
+h3 { font-size: 17.5px; margin: 22px 0 6px; font-weight: 700; }
 p, li { color: var(--ink); }
 p { margin: 12px 0; }
 ul { padding-left: 22px; margin: 12px 0; }
-li { margin: 6px 0; }
-a { color: var(--jade); }
+li { margin: 7px 0; }
+li::marker { color: var(--jade); }
+a { color: var(--jade); text-underline-offset: 2px; }
 strong { color: var(--ink); }
 .ph {
   background: var(--ph-bg); color: var(--ph-ink); border-radius: 5px;
@@ -60,76 +100,113 @@ strong { color: var(--ink); }
 }
 .draft {
   background: var(--ph-bg); color: var(--ph-ink); border: 1px solid var(--gold);
-  border-radius: 10px; padding: 10px 14px; margin: 18px 0 0; font-size: 14px; font-weight: 600;
+  border-radius: 12px; padding: 10px 14px; margin: 18px 0 0; font-size: 14px; font-weight: 700;
 }
+
+/* Doc pages sit on a raised sheet, like a card in the app */
+.doc {
+  background: var(--card); border: 2px solid var(--hair); border-bottom-width: 5px;
+  border-radius: 22px; padding: 34px 38px 30px; margin-top: 4px;
+}
+@media (max-width: 560px) { .doc { padding: 24px 20px 22px; border-radius: 18px; } }
+.doc h1 { font-size: 28px; }
+.doc h2 { font-size: 20px; margin-top: 32px; }
+
+/* Push buttons, straight from the app: a chunky pressed edge */
+.btn {
+  display: inline-flex; align-items: center; gap: 8px; text-decoration: none;
+  border-radius: 15px; padding: 13px 24px; font-size: 16.5px; font-weight: 800;
+  background: var(--jade); color: #fff;
+  box-shadow: 0 4px 0 var(--jade-edge);
+  transition: transform .12s ease, box-shadow .12s ease, background .12s ease;
+}
+.btn:hover { transform: translateY(-1px); box-shadow: 0 5px 0 var(--jade-edge); }
+.btn:active { transform: translateY(3px); box-shadow: 0 1px 0 var(--jade-edge); }
+.btn.gold { background: var(--gold); color: var(--gold-ink); box-shadow: 0 4px 0 var(--gold-edge); }
+.btn.gold:hover { box-shadow: 0 5px 0 var(--gold-edge); }
+.btn.gold:active { box-shadow: 0 1px 0 var(--gold-edge); }
+.btn.tile {
+  background: var(--card); color: var(--jade-deep);
+  border: 2px solid var(--tile-edge); box-shadow: 0 4px 0 var(--tile-edge);
+}
+.btn.tile:hover { box-shadow: 0 5px 0 var(--tile-edge); }
+.btn.tile:active { box-shadow: 0 1px 0 var(--tile-edge); }
+
+/* Cards with tile edges */
 .cards { display: grid; gap: 14px; margin-top: 26px; grid-template-columns: 1fr 1fr; }
 @media (max-width: 560px) { .cards { grid-template-columns: 1fr; } }
 .card {
-  background: var(--card); border: 1px solid var(--hair); border-radius: 14px;
-  padding: 18px 20px; text-decoration: none; color: var(--ink); display: block;
+  background: var(--card); border: 2px solid var(--hair); border-bottom-width: 5px;
+  border-radius: 17px; padding: 18px 20px; text-decoration: none; color: var(--ink);
+  display: block; transition: transform .12s ease, border-color .12s ease;
 }
-.card:hover { border-color: var(--jade); }
+.card:hover { border-color: var(--jade); transform: translateY(-2px); }
 .card b { display: block; font-size: 18px; margin-bottom: 4px; }
 .card span { color: var(--sub); font-size: 15px; }
-footer { margin-top: 46px; padding-top: 18px; border-top: 1px solid var(--hair); color: var(--sub); font-size: 14px; }
-footer a { color: var(--jade); }
-footer .foot-links { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 8px; }
+
+footer { margin-top: 54px; padding-top: 20px; border-top: 1px solid var(--hair); color: var(--sub); font-size: 14px; }
+footer a { color: var(--jade); text-decoration: none; font-weight: 700; }
+footer a:hover { text-decoration: underline; }
+footer .foot-links { display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 10px; }
 
 /* Marketing landing (home page only) */
-.hero { text-align: center; padding: 10px 0 4px; }
+.hero { text-align: center; padding: 34px 0 8px; }
 .hero img.appicon {
-  width: 88px; height: 88px; border-radius: 21px; box-shadow: 0 8px 24px rgba(0,0,0,.14);
-  border: 1px solid var(--hair);
+  width: 96px; height: 96px; border-radius: 24px;
+  border: 2px solid var(--hair); box-shadow: 0 10px 28px var(--shadow);
 }
-.hero h1 { margin: 16px 0 0; font-size: 34px; }
-.hero .lede { font-size: 19px; color: var(--sub); max-width: 32em; margin: 12px auto 0; }
-.cta { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin: 24px 0 4px; }
-.btn {
-  display: inline-flex; align-items: center; gap: 8px; text-decoration: none;
-  border-radius: 12px; padding: 12px 20px; font-size: 16px; font-weight: 600;
-  background: var(--jade); color: #fff; border: 1px solid var(--jade);
+.hero h1 { margin: 18px 0 0; font-size: clamp(34px, 6vw, 44px); }
+.hero h1 .accent { color: var(--jade); }
+.hero .lede { font-size: 19px; color: var(--sub); max-width: 30em; margin: 14px auto 0; }
+.cta { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; margin: 26px 0 4px; }
+.chips { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin: 24px 0 6px; }
+.chip {
+  display: inline-flex; align-items: center; gap: 7px;
+  background: var(--card); border: 2px solid var(--tile-edge); border-bottom-width: 4px;
+  border-radius: 999px; padding: 7px 15px; font-size: 14.5px; font-weight: 700; color: var(--ink);
 }
-.btn:hover { background: var(--jade-dark); border-color: var(--jade-dark); }
-.btn.ghost { background: transparent; color: var(--jade); }
-.btn.ghost:hover { background: transparent; text-decoration: underline; }
-.badges { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin: 14px 0 2px; }
+.badges { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin: 16px 0 2px; }
 .badge {
   display: inline-flex; align-items: center; gap: 11px; text-decoration: none;
-  background: var(--ink); color: var(--paper); border-radius: 13px; padding: 10px 18px;
+  background: var(--ink); color: var(--paper); border-radius: 14px; padding: 10px 18px;
   border: 1px solid var(--ink); line-height: 1.15; opacity: .5; cursor: default;
 }
 .badge .mark { font-size: 22px; }
 .badge small { display: block; font-size: 11px; letter-spacing: .04em; text-transform: uppercase; opacity: .85; }
 .badge b { font-size: 16px; }
-.note { text-align: center; color: var(--sub); font-size: 13px; margin-top: 10px; }
+.note { text-align: center; color: var(--sub); font-size: 13.5px; margin-top: 12px; }
 .shots {
-  display: flex; gap: 16px; overflow-x: auto; padding: 10px 2px 16px; margin: 8px -4px 0;
+  display: flex; gap: 18px; overflow-x: auto; padding: 12px 2px 18px; margin: 8px -4px 0;
   scroll-snap-type: x mandatory; justify-content: flex-start;
 }
-@media (min-width: 660px) { .shots { justify-content: center; } }
-.shot { flex: 0 0 auto; width: 200px; scroll-snap-align: center; text-align: center; }
+@media (min-width: 700px) { .shots { justify-content: center; } }
+.shot { flex: 0 0 auto; width: 210px; scroll-snap-align: center; text-align: center; margin: 0; }
 .shot img {
-  width: 100%; height: auto; display: block; border-radius: 24px;
-  border: 1px solid var(--hair); background: var(--card); box-shadow: 0 14px 34px rgba(0,0,0,.13);
+  width: 100%; height: auto; display: block; border-radius: 26px;
+  border: 2px solid var(--hair); background: var(--card); box-shadow: 0 16px 36px var(--shadow);
 }
 .shot span { display: block; color: var(--sub); font-size: 14px; margin-top: 12px; }
 .grid2 { display: grid; gap: 14px; grid-template-columns: 1fr 1fr; margin-top: 14px; }
 @media (max-width: 560px) { .grid2 { grid-template-columns: 1fr; } }
-.panel { background: var(--card); border: 1px solid var(--hair); border-radius: 14px; padding: 16px 20px; }
-.panel h3 { margin: 0 0 6px; color: var(--jade-dark); }
+.panel {
+  background: var(--card); border: 2px solid var(--hair); border-bottom-width: 5px;
+  border-radius: 17px; padding: 18px 22px;
+}
+.panel h3 { margin: 0 0 6px; color: var(--jade-deep); }
 .panel ul { margin: 8px 0 0; }
-.sep { border: 0; border-top: 1px solid var(--hair); margin: 40px 0 0; }
 </style>
 </head>
 <body>
-<div class="wrap">
-<header>
-  <div class="brand"><b>Lannang</b><span>Learn Philippine Hokkien (Lannang-ue)</span></div>
-  <nav><a href="../">Home</a><a href="../sponsor/">Sponsor</a><a href="../contribute/" aria-current="page">Contribute</a><a href="../support/">Support</a><a href="../privacy/">Privacy</a><a href="../terms/">Terms</a></nav>
+<header class="top">
+  <div class="bar">
+    <a class="brand" href="../"><img src="../media/icon.png" alt="" width="34" height="34" /><b>Lannang</b></a>
+    <nav><a href="../">Home</a><a href="../sponsor/">Sponsor</a><a href="../contribute/" aria-current="page">Contribute</a><a href="../support/">Support</a><a href="../privacy/">Privacy</a><a href="../terms/">Terms</a></nav>
+  </div>
 </header>
+<div class="wrap">
 
 <main>
-<h1>Help build Lannang</h1>
+<article class="doc"><h1>Help build Lannang</h1>
 <p>Lannang-ue lives in families, not textbooks. If you speak it, or you are learning it alongside a fluent parent or grandparent, you can directly shape what this app teaches: contribute new content, correct what is wrong, and suggest improvements to how Lannang teaches.</p>
 <h2>Why we need you</h2>
 <p>Lannang's audio started as an AI draft, and its curriculum is only as good as the real speech it is checked against. There is no big Lannang-ue corpus anywhere in the world. The only true authority is people like your ama and angkong, and you. Every correction and every new word you send makes the app more honest.</p>
@@ -140,16 +217,19 @@ footer .foot-links { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 8
 <h2>How your contribution ships</h2>
 <p>Every suggestion and recording is reviewed with fluent speakers before anything changes in the app. We compare submissions against each other and against how families actually speak, so no single submission is applied blindly. Recordings are stored privately, never published raw, and you can delete everything by deleting your account.</p>
 <h2>Start now</h2>
-<p>Get the app from the <a href="../beta/">beta page</a>, flag anything that sounds off, and send us the words your family uses. Salamat and to-sia.</p>
+<p>Get the app from the <a href="../beta/">beta page</a>, flag anything that sounds off, and send us the words your family uses. Salamat and to-sia.</p></article>
 </main>
 <footer>
   <div class="foot-links">
     <a href="../">Home</a>
+    <a href="../beta/">Beta</a>
+    <a href="../sponsor/">Sponsor</a>
+    <a href="../contribute/">Contribute</a>
     <a href="../privacy/">Privacy</a>
     <a href="../terms/">Terms</a>
     <a href="mailto:happykimi.dev@gmail.com">Contact</a>
   </div>
-  &copy; Lannang. Learn Philippine Hokkien (Lannang-ue).
+  &copy; Lannang. Learn Philippine Hokkien (Lannang-ue). Made with love for the Chinoy community. Salamat and to-sia.
 </footer>
 </div>
 </body>
