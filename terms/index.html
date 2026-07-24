@@ -12,6 +12,10 @@
 <meta property="og:image" content="https://happychio.github.io/lannang-site/media/og.png" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="theme-color" content="#FBFBF8" />
+<!-- These static pages run no scripts. A strict CSP makes that explicit and neutralizes any
+     injected markup: no script can execute, and only same-origin assets plus Google Fonts load. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; base-uri 'self'; form-action 'none'; frame-ancestors 'none'" />
+<meta http-equiv="X-Content-Type-Options" content="nosniff" />
 <link rel="icon" href="../media/favicon.svg" />
 <link rel="apple-touch-icon" href="../media/app-icon.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
